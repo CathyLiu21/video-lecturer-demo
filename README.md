@@ -32,8 +32,9 @@ This project implements a **tiered agentic system** that balances reasoning dept
     *   *Cost:* <$0.01
     *   *Latency:* ~2s
     *   *Use Case:* Summaries, textual Q&A.
-*   **Mode 2: Visual RAG (Graphon)**
+*   **Mode 2: Visual RAG (Graphon RSM)**
     *   *Cost:* Moderate
+    *   *Technique:* **Relationship Systems Models (RSM)** instead of standard CLIP. Uses graph-native embeddings to understand compositional relationships in diagrams (e.g., "A points to B") which standard vector search misses.
     *   *Use Case:* Retrieving specific visual slides without processing the whole video.
 *   **Mode 3: Native Multimodal (Gemini 3.0 Pro)**
     *   *Cost:* High
@@ -42,7 +43,7 @@ This project implements a **tiered agentic system** that balances reasoning dept
 ## 🛠️ Tech Stack
 *   **Frontend**: Next.js 14, TailwindCSS, Framer Motion
 *   **Backend**: Python FastAPI, Async Task Queues
-*   **AI**: Google Gemini 2.5/3.0, Graphon (Visual Embeddings)
+*   **AI**: Google Gemini Flash2.5/Pro 3.0, Graphon (Visual Embeddings and RAG)
 *   **Infrastructure**: Docker, Google Cloud Compute Engine (GCP)
 
 ## 📊 Evaluation
