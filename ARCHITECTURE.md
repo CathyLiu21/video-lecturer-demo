@@ -6,14 +6,14 @@ Gemini Video Lecturer is designed as a **Microservices Architecture** on a **Hyb
 ## 📐 Architecture Diagram
 ```mermaid
 graph TD
-    User[User (Browser)] -->|Next.js (Port 3000)| Frontend
-    Frontend -->|API Request| Backend[FastAPI Backend (Port 8000)]
+    User["User (Browser)"] -->|Next.js (Port 3000)| Frontend
+    Frontend -->|API Request| Backend["FastAPI Backend (Port 8000)"]
     
     subgraph "Hybrid Intelligence Routing"
         Backend -->|Router| Classifier{Complexity?}
-        Classifier -->|Simple| Standard[Standard Mode (Gemini Flash)]
-        Classifier -->|Visual| Native[Native Mode (Gemini Pro Video)]
-        Classifier -->|Retrieval| RAG[Visual RAG (Graphon)]
+        Classifier -->|Simple| Standard["Standard Mode (Gemini Flash)"]
+        Classifier -->|Visual| Native["Native Mode (Gemini Pro Video)"]
+        Classifier -->|Retrieval| RAG["Visual RAG (Graphon)"]
     end
     
     Standard -->|Response| Backend
