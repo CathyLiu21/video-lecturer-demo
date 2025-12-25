@@ -23,7 +23,7 @@ Quiz
 ## 💡 The Problem
 Standard video analysis tools are either:
 1.  **Text-only**: They summarize transcripts but miss visual context (whiteboards, graphs, code).
-2.  **Too Expensive**: Sending full video to frontier models (Gemini 1.5 Pro) costs ~$0.50+ per query.
+2.  **Too Expensive**: Sending full video to frontier models (Gemini 3.0 Pro) costs ~$3.00+ for a 1-hour lecture.
 
 ## 🧠 The Solution: Hybrid Intelligence Architecture
 This project implements a **tiered agentic system** that balances reasoning depth with production costs.
