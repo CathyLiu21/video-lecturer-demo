@@ -4,8 +4,13 @@
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](http://34.57.223.153:3000/)
 [![Tech Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20FastAPI%20%7C%20Docker%20%7C%20GCP-blue)]()
 
+Homepage
 ![Homepage](images/home.png)
+
+Overview
 ![Overview](images/overview.png)
+
+Quiz
 ![Quiz](images/quiz.png)
 
 ## 🚀 Live Demo
@@ -30,7 +35,7 @@ This project implements a **tiered agentic system** that balances reasoning dept
 *   **Mode 2: Visual RAG (Graphon)**
     *   *Cost:* Moderate
     *   *Use Case:* Retrieving specific visual slides without processing the whole video.
-*   **Mode 3: Native Multimodal (Gemini 2.5 Pro)**
+*   **Mode 3: Native Multimodal (Gemini 3.0 Pro)**
     *   *Cost:* High
     *   *Use Case:* Complex visual reasoning (e.g., "Explain the diagram at 10:05").
 
