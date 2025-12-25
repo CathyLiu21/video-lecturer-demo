@@ -6,7 +6,7 @@ Gemini Video Lecturer is designed as a **Microservices Architecture** on a **Hyb
 ## 📐 Architecture Diagram
 ```mermaid
 graph TD
-    User["User (Browser)"] -->|Next.js (Port 3000)| Frontend
+    User["User (Browser)"] -->|Next.js Port 3000| Frontend
     Frontend -->|API Request| Backend["FastAPI Backend (Port 8000)"]
     
     subgraph "Hybrid Intelligence Routing"
